@@ -1,0 +1,31 @@
+Evaluating node:S (g:0,h:5,f:5)
+open set:{'S'}
+closed set:set()
+Exploring neighbours of  S:
+Neighbours:A with weight:1 and h(A):3
+Added A to open set with g(A)=1 and f(A)=4
+Neighbours:G with weight:10 and h(G):0
+Added G to open set with g(G)=10 and f(G)=10
+
+Evaluating node:A (g:1,h:3,f:4)
+open set:{'G', 'A'}
+closed set:{'S'}
+Exploring neighbours of  A:
+Neighbours:B with weight:2 and h(B):4
+Added B to open set with g(B)=3 and f(B)=7
+Neighbours:C with weight:1 and h(C):2
+Added C to open set with g(C)=2 and f(C)=4
+
+Evaluating node:C (g:2,h:2,f:4)
+open set:{'B', 'G', 'C'}
+closed set:{'S', 'A'}
+Exploring neighbours of  C:
+Neighbours:D with weight:3 and h(D):6
+Added D to open set with g(D)=5 and f(D)=11
+Neighbours:G with weight:4 and h(G):0
+Updated G to have a shorter path with g(G) and f(G)=6
+
+Evaluating node:G (g:6,h:0,f:6)
+open set:{'B', 'D', 'G'}
+closed set:{'S', 'A', 'C'}
+path found:['S', 'A', 'C', 'G']
